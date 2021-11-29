@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Form Validation using Java Script</title>
+        <script src="script/formValidation.js"></script>
+        <link rel="stylesheet" href="styles/formStyles.css">
+    </head>
+    <body>
+        <h1>Submit your Application</h1>
+        <p>for <b>.NET Developer (fresher)</b></p>
+        <form>
+            <legend> <b>Personal Information</b></legend><br>
+            <div id="firstBlock">
+
+                <label>Name as per ID proof <span>*</span></label><label id="userErrorMessage">User name is Required*</label><br>
+                <input type="text" id="applicantName" size="50"><br><br>
+
+                <label>Email <span>*</span></label><label id="emailErrorMessage">User Mail is Required*</label><br>
+                <input type="text" id="emailId" size="50"><br><br>
+
+                <label>CurrentAddress <span>*</span></label><label id="addressErrorMessage">Enter the Correct Address*</label><br>
+                <input type="text" id="currentAddress" size="50"><br><br>
+
+                <input type="text" id="currentCityName" placeholder="city" size="25">
+
+                <select id="currentStateName" name="statename">
+                   <option value="tamilNadu" name="statename">TamilNadu</option>
+                   <option value="kerala" name="statename">Kerala</option>
+                   <option value="andhraPradesh" name="statename">Andhra Pradesh</option>
+                   <option value="delhi" name="statename">Delhi</option>
+                </select><br><br>
+
+                <label>Permanent Address <span>*</span></label>
+                <input type="checkbox" name="sameaddress" id="sameAddress" onclick="copyContents()">
+                <label>Same as Current Address</label><br><br>
+
+                <input type="text" id="permanentAddress" size="50" placeholder="AddressLine 1"><br><label id="permanentAddressErrorMessage">Enter the Correct Address*</label><br><br>
+
+                <input type="text" id="permanentCityName" placeholder="city" size="25">
+
+                <select id="stateName" name="permanentStatename" placeholder="State Name">
+                    <option value="tamilNadu" name="statename">TamilNadu</option>
+                    <option value="kerala" name="statename">Kerala</option>
+                    <option value="andhraPradesh" name="statename">Andhra Pradesh</option>
+                    <option value="delhi" name="statename">Delhi</option>
+                </select>
+            </div>
+            <div id="secondBlock"><br>
+                <label>Father's Name <span>*</span></label><label id="fatherErrorMessage">User name is Required *</label><br>
+                <input type="text" id="fatherName" size="50"><br><br>
+
+                <label>Date of Birth <span>*</span></label><label id="dateError">Enter Date of Birth *</label><br>
+                <input type="text" id="dateOfBirth" size="50"><br><br>
+
+                <label>Mobile No<span>*</span></label><label id="mobileNumberError">Enter the mobile Number</label><br>
+                <input type="text" id="mobileNumber" size="50"><br><br>
+
+                <input type="text" id="currentAddressLine" size="50" placeholder="Address Line2"><br><br><br>
+
+                <input type="text" id="currentPincode" size="50" placeholder="Zip Code"><label id="cPinError">Enter the PIN Code *</label><br><br><br>
+
+                <input type="text" id="permanentAddressLine" size="50" placeholder="Address Line2"><br><br><br>
+
+                <input type="text" id="permanentPincode" size="50" placeholder="Zip Code"><label id="pPinError">Enter the PIN Code *</label><br><br><br>
+            </div>
+            <br id="clear">
+            <p>Upload Profile Photo <span>*</span> (JPG/PNG format only)</p>
+            <p>Please Upload a photo of yourself. Your face should be clearly visible. Make sure the image size does not exceed 500kb.</p>
+            <center>
+                <input type="file" value="photo upload" id="profilephoto"><label id="photoSelection">select the photo</label><br>
+            <input type="button" value="Submitt Form" id="submittvalue" onclick="mainfunction();"></center>
+        </form>
+    </body>
+</html>

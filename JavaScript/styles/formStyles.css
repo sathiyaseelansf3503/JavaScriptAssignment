@@ -1,0 +1,43 @@
+span
+{
+    color: red;
+}
+#dateError, #mobileNumberError, #addressErrorMessage, #emailErrorMessage, #fatherErrorMessage, #userErrorMessage, #cPinError, #pPinError, #photoSelection, #permanentAddressErrorMessage
+{
+    padding-left: 30px;
+    visibility: hidden;
+    color: red;
+}
+#firstBlock
+{
+    float: left;
+    margin-left: 200px; 
+}
+#secondBlock
+{
+    float: left;
+    margin-left: 70px;
+    margin-top: -30px;
+}
+#clear
+{
+   clear: both;
+}
+h1, p, legend
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#profilephoto
+{
+    background-color: blue;
+    color: ghostwhite;
+}
+#submittvalue
+{
+    margin-top: 20px;
+    background-color: blue;
+    color: cornsilk;
+    border-radius: 2px;
+    padding: 7px;
+}
